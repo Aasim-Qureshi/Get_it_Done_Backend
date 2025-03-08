@@ -1,11 +1,11 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'altimate',
-    host: 'localhost',
-    database: 'projectmanagementsystem',
-    password: 'anything',
-    port: 5432
+    user: process.env.USERNAME,
+    host: process.env.HOSTNAME,
+    database: process.env.DATABASE,
+    password: process.env.PASSWORD,
+    port: process.env.DB_PORT
 });
 
 module.exports = pool;
