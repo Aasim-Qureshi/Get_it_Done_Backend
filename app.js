@@ -14,10 +14,12 @@ const app = express();
 app.use(cookieparser());
 app.use(express.json());
 
-app.use(cors({
-    origin: '*',
-    credentials: true
-}));
+const corsOptions = {
+    origin: 'https://get-it-done-frontend-mmiy840d0-aasim-qureshis-projects.vercel.app',  // Your frontend URL on Vercel
+    credentials: true  // Allow cookies to be sent with the request
+};
+
+app.use(cors(corsOptions));
 
 app.use('/users', usersRouter);
 app.use('/projects', authenticateUser, projectsRouter);
