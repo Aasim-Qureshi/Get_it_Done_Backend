@@ -15,7 +15,7 @@ app.use(cookieparser());
 app.use(express.json());
 
 app.use(cors({
-    origin: ['192.168.29.180:3000', 'https://get-it-done-backend.onrender.com'],
+    origin: ['192.168.29.180:3000', 'https://get-it-done-frontend.vercel.app/'],
     credentials: true
 }));
 
