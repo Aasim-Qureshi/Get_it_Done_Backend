@@ -15,7 +15,7 @@ app.use(cookieparser());
 app.use(express.json());
 
 const corsOptions = {
-    origin: 'https://get-it-done-frontend.vercel.app/',  // Your frontend URL on Vercel
+    origin: ['https://get-it-done-frontend-aasim-qureshis-projects.vercel.app/', 'https://get-it-done-frontend.vercel.app/'],  // Your frontend URL on Vercel
     credentials: true  // Allow cookies to be sent with the request
 };
 
