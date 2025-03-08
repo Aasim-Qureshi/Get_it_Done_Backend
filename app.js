@@ -15,7 +15,7 @@ app.use(cookieparser());
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://192.168.29.180:3000', 'https://get-it-done-frontend.vercel.app/', 'https://get-it-done-frontend-mmiy840d0-aasim-qureshis-projects.vercel.app/'],
+    origin: '*',
     credentials: true
 }));
 
